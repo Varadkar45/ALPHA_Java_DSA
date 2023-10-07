@@ -1,27 +1,23 @@
 public class multipleinheritance {
     public static void main(String args[]) {
-        Dog dobby = new Dog();
-        dobby.eat();
-        dobby.legs = 4;
-        System.out.println(dobby.legs);
+        Bear b = new Bear();
+        b.green();
+        b.animal();
     }
 }
 
-class Animal {
-    String color;
-    
-    void eat() {
-        System.out.println("eats");
-    }
-    void breath() {
-        System.out.println("Breathes");
-    }
+interface Herbivore {
+    void green();
 }
-class Mammmal extends Animal {
-    int legs;
-    
+interface Carnivore {
+    void animal();
 }
 
-class Dog extends Mammmal {
-    String breed;
+class Bear implements Herbivore, Carnivore {
+    public void green() {
+        System.out.println("Eats green food");
+    }
+    public void animal() {
+        System.out.println("Eats animal");
+    }
 }
