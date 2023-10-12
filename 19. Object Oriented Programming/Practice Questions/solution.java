@@ -28,7 +28,20 @@ class Complex {
         } else if (imag == 0 && real != 0) {
             System.out.println(real);
         } else {
-            System.out.println(real + "+" + imag + "i");
+            System.out.println(real + (imag >= 0 ? "+" : "") + imag + "i");
         }
+    }
+}
+
+public class solution {
+    public static void main(String[] args) {
+        Complex c = new Complex(4, 5);
+        Complex d = new Complex(9, 4);
+        Complex e = Complex.add(c, d);
+        Complex f = Complex.diff(c, d);
+        Complex g = Complex.product(c, d);
+        e.printComplex();
+        f.printComplex();
+        g.printComplex();
     }
 }
