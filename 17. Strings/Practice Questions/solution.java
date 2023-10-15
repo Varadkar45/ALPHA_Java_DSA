@@ -1,5 +1,5 @@
 
-public class Solution{
+public class solution{
     public static void main(String args[]) {
         String str="ShradhaDidi";
         String str1="ApnaCollege";
