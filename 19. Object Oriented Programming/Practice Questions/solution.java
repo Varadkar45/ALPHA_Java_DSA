@@ -33,7 +33,7 @@ class Complex {
     }
 }
 
-public class solution {
+public class complex {
     public static void main(String[] args) {
         Complex c = new Complex(4, 5);
         Complex d = new Complex(9, 4);
